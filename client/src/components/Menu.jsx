@@ -3,11 +3,24 @@ import styled from "styled-components";
 
 const Container = styled.div`
   flex: 1;
-  background-color: black;
+  background-color: #202020;
+  height: 100vh;
+  color: white;
 `;
-
+const Wrapper = styled.div`
+  padding: 18px 26px;
+`;
+const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
 const Menu = () => {
-  return <Container>Menu</Container>;
+  return (
+    <Container>
+      <Wrapper>Items</Wrapper>
+    </Container>
+  );
 };
 
 export default Menu;
