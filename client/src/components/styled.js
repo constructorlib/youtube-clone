@@ -28,7 +28,7 @@ export const Img = styled.img`
 `;
 export const Hr = styled.hr`
   margin: 15px 0px;
-  border: 0.5px solid ${({ theme }) => theme.soft};
+  border: 0.5px solid gray;
 `;
 export const Login = styled.div``;
 export const Button = styled.button`
@@ -43,4 +43,10 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 5px;
+`;
+export const Title = styled.h2`
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 20px;
 `;
