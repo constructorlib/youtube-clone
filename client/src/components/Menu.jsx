@@ -36,7 +36,10 @@ const Menu = () => {
           <Img src={LamaTube} />
           LamaTube
         </Logo>
-        <Item>Home</Item>
+        <Item>
+          <HomeIcon />
+          Home
+        </Item>
       </Wrapper>
     </Container>
   );
