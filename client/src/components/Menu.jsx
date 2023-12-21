@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import LamaTube from "../img/logo.png";
 import HomeIcon from "@mui/icons-material/Home";
+import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
+import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
+import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
+import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
 const Container = styled.div`
   flex: 1;
   background-color: #202020;
@@ -28,6 +32,11 @@ const Item = styled.div`
 const Img = styled.img`
   height: 25px;
 `;
+const Hr = styled.hr`
+  margin: 15px 0px;
+  border: 0.5px solid ${({ theme }) => theme.soft};
+`;
+
 const Menu = () => {
   return (
     <Container>
@@ -40,6 +49,24 @@ const Menu = () => {
           <HomeIcon />
           Home
         </Item>
+        <Item>
+          <ExploreOutlinedIcon />
+          Explore
+        </Item>
+        <Item>
+          <SubscriptionsOutlinedIcon />
+          Subscriptions
+        </Item>
+        <Hr />
+        <Item>
+          <VideoLibraryOutlinedIcon />
+          Library
+        </Item>
+        <Item>
+          <HistoryOutlinedIcon />
+          History
+        </Item>
+        <Hr />
       </Wrapper>
     </Container>
   );
