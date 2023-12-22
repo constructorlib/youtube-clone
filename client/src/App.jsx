@@ -8,6 +8,7 @@ const Container = styled.div`
 `;
 const Main = styled.div`
   flex: 7;
+  background-color: #181818;
 `;
 const Wrapper = styled.div``;
 export default function App() {
@@ -16,7 +17,55 @@ export default function App() {
       <Menu />
       <Main>
         <Navbar />
-        <Wrapper>video cards</Wrapper>
+        <Wrapper>
+          video cards
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+        </Wrapper>
       </Main>
     </Container>
   );

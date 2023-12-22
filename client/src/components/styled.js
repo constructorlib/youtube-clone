@@ -6,6 +6,8 @@ export const Container = styled.div`
   height: 100vh;
   color: white;
   font-size: 14px;
+  position: sticky;
+  top: 0;
 `;
 export const Wrapper = styled.div`
   padding: 18px 26px;
@@ -16,6 +18,7 @@ export const Logo = styled.div`
   gap: 5px;
   font-weight: bold;
   margin-bottom: 25px;
+  cursor: pointer;
 `;
 export const Item = styled.div`
   display: flex;
