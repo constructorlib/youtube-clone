@@ -10,7 +10,7 @@ import {
   Login,
   Button,
   Title,
-} from "./styled";
+} from "./menu";
 import {
   HomeIcon,
   ExploreOutlinedIcon,
@@ -28,7 +28,7 @@ import {
   FlagOutlinedIcon,
   HelpOutlineOutlinedIcon,
   SettingsBrightnessOutlinedIcon,
-} from "./muiIcons";
+} from "../utils/muiIcons";
 
 import { Link } from "react-router-dom";
 const Menu = ({ darkMode, setDarkMode }) => {
