@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import { darkTheme, lightTheme } from "./utils/Theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Videos from "./pages/Videos";
 const Container = styled.div`
   display: flex;
 `;
@@ -27,7 +28,9 @@ export default function App() {
               <Routes>
                 <Route path="/">
                   <Route index element={<Home />} />
-                  <Route path="video"></Route>
+                  <Route path="video">
+                    <Route path=":id" element={<Videos />} />
+                  </Route>
                 </Route>
               </Routes>
             </Router>
