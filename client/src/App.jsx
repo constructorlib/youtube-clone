@@ -26,7 +26,7 @@ export default function App() {
             <Router>
               <Routes>
                 <Route path="/">
-                  <Route index element={Home} />
+                  <Route index element={<Home />} />
                   <Route path="video"></Route>
                 </Route>
               </Routes>
