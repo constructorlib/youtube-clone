@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
-import Menu from "./components/Menu";
-import Navbar from "./components/Navbar";
+import Menu from "./components/Menu/Menu";
+import Navbar from "./components/Navbar/Navbar";
 import { darkTheme, lightTheme } from "./utils/Theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -14,7 +14,9 @@ const Main = styled.div`
   flex: 7;
   background-color: ${({ theme }) => theme.bg};
 `;
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding: 22px 96px;
+`;
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
   return (

@@ -3,7 +3,7 @@ import { Button, Input, Search, Wrapper, Container } from "./navbar";
 import {
   AccountCircleOutlinedIcon,
   SearchOutlinedIcon,
-} from "../utils/muiIcons";
+} from "../../utils/muiIcons";
 const Navbar = () => {
   return (
     <Container>
