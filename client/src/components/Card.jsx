@@ -5,8 +5,19 @@ const Container = styled.div`
   margin-bottom: 45px;
   cursor: pointer;
 `;
+
+const Image = styled.img`
+  width: 100%;
+  height: 202px;
+  background-color: #999;
+  cursor: pointer;
+`;
 const Card = () => {
-  return <Container>yahoo</Container>;
+  return (
+    <Container>
+      <Image />
+    </Container>
+  );
 };
 
 export default Card;
