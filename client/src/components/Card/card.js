@@ -25,3 +25,7 @@ export const ChannelImage = styled.img`
   border-radius: 50%;
   background-color: #fff;
 `;
+export const Texts = styled.div``;
+export const Title = styled.div``;
+export const ChannelName = styled.div``;
+export const Info = styled.div``;
