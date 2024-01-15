@@ -26,6 +26,17 @@ export const ChannelImage = styled.img`
   background-color: #fff;
 `;
 export const Texts = styled.div``;
-export const Title = styled.div``;
-export const ChannelName = styled.div``;
-export const Info = styled.div``;
+export const Title = styled.h1`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text};
+`;
+export const ChannelName = styled.h2`
+  font-size: 14px;
+  color: ${({ theme }) => theme.textSoft};
+  margin: 9px 0;
+`;
+export const Info = styled.div`
+  font-size: 14px;
+  color: ${({ theme }) => theme.textSoft};
+`;
