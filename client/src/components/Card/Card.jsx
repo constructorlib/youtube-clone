@@ -10,19 +10,22 @@ import {
   Info,
   Title,
 } from "./card";
+import { Link } from "react-router-dom";
 const Card = () => {
   return (
-    <Container>
-      <Image src={Thumbnail} />
-      <Details>
-        <ChannelImage />
-        <Texts>
-          <Title>Test Video</Title>
-          <ChannelName>Constructorlib</ChannelName>
-          <Info>500 views, 1 day ago</Info>
-        </Texts>
-      </Details>
-    </Container>
+    <Link to="/video/test" style={{ textDecoration: "none" }}>
+      <Container>
+        <Image src={Thumbnail} />
+        <Details>
+          <ChannelImage src="https://i.pinimg.com/474x/a8/8a/49/a88a49dadce4b16fb109f3aea6ce446b.jpg" />
+          <Texts>
+            <Title>Test Video</Title>
+            <ChannelName>Constructorlib</ChannelName>
+            <Info>500 views, 1 day ago</Info>
+          </Texts>
+        </Details>
+      </Container>
+    </Link>
   );
 };
 

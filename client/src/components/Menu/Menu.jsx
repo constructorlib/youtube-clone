@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LamaTube from "../../img/logo.png";
 import {
   Container,
@@ -29,8 +30,6 @@ import {
   HelpOutlineOutlinedIcon,
   SettingsBrightnessOutlinedIcon,
 } from "../../utils/muiIcons";
-
-import { Link } from "react-router-dom";
 const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
