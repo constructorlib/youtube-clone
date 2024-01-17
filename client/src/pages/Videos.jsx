@@ -5,22 +5,29 @@ import {
   Recommendations,
   VideoWrapper,
   Title,
+  Details,
+  Info,
 } from "./videos";
 const Videos = () => {
   return (
     <Container>
-      <VideoWrapper>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rg1RoU0HF8pBSl3P"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </VideoWrapper>
-      <Content>content</Content>
+      <Content>
+        <VideoWrapper>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GhclOjt7d2U?si=ZCDQU_d7inqSyIzr"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullscreen
+          ></iframe>
+        </VideoWrapper>
+        <Title>She Swallowed Burning Coals</Title>
+        <Details>
+          <Info></Info>
+        </Details>
+      </Content>
       <Recommendations>Recommendations</Recommendations>
     </Container>
   );
