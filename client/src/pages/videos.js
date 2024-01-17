@@ -11,7 +11,25 @@ export const Recommendations = styled.div`
   flex: 2;
 `;
 export const VideoWrapper = styled.div``;
-export const Title = styled.h1``;
-export const Info = styled.span``;
-export const ButtonsWrapper = styled.div``;
+export const Title = styled.h1`
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: ${({ theme }) => theme.text};
+`;
+export const Details = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Info = styled.span`
+  color: ${({ theme }) => theme.textSoft};
+`;
+export const ButtonsWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  color: ${({ theme }) => theme.text};
+`;
 export const Button = styled.div``;

@@ -7,6 +7,8 @@ import {
   Title,
   Details,
   Info,
+  Button,
+  ButtonsWrapper,
 } from "./videos";
 const Videos = () => {
   return (
@@ -20,12 +22,16 @@ const Videos = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullscreen
+            allowFullScreen
           ></iframe>
         </VideoWrapper>
         <Title>She Swallowed Burning Coals</Title>
         <Details>
-          <Info></Info>
+          <Info>792,300 views * Jan 22, 2016</Info>
+          <ButtonsWrapper>
+            <Button>button</Button>
+            <Button>button</Button>
+          </ButtonsWrapper>
         </Details>
       </Content>
       <Recommendations>Recommendations</Recommendations>
