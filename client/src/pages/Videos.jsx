@@ -9,6 +9,10 @@ import {
   Info,
   Button,
   ButtonsWrapper,
+  Hr,
+  Channel,
+  ChannelInfo,
+  Subscribe,
 } from "./videos";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownOffAltOutlined";
@@ -50,6 +54,11 @@ const Videos = () => {
             </Button>
           </ButtonsWrapper>
         </Details>
+        <Hr />
+        <Channel>
+          <ChannelInfo></ChannelInfo>
+          <Subscribe>SUBSCRIBE</Subscribe>
+        </Channel>
       </Content>
       <Recommendations>Recommendations</Recommendations>
     </Container>

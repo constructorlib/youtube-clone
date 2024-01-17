@@ -10,6 +10,7 @@ export const Content = styled.div`
 export const Recommendations = styled.div`
   flex: 2;
 `;
+
 export const VideoWrapper = styled.div``;
 export const Title = styled.h1`
   font-size: 18px;
@@ -38,3 +39,13 @@ export const Button = styled.div`
   gap: 5px;
   cursor: pointer;
 `;
+export const Hr = styled.hr`
+  border: 0.5px solid ${({ theme }) => theme.soft};
+  margin: 15px 0;
+`;
+export const Channel = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const ChannelInfo = styled.div``;
+export const Subscribe = styled.button``;
