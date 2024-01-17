@@ -13,6 +13,11 @@ import {
   Channel,
   ChannelInfo,
   Subscribe,
+  Image,
+  ChannelDetails,
+  ChannelCounter,
+  Description,
+  ChannelName,
 } from "./videos";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownOffAltOutlined";
@@ -56,7 +61,19 @@ const Videos = () => {
         </Details>
         <Hr />
         <Channel>
-          <ChannelInfo></ChannelInfo>
+          <ChannelInfo>
+            <Image src="https://i.pinimg.com/474x/a8/8a/49/a88a49dadce4b16fb109f3aea6ce446b.jpg" />
+            <ChannelDetails>
+              <ChannelName>constructorlib</ChannelName>
+              <ChannelCounter>200K subscribers</ChannelCounter>
+              <Description>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis iure perferendis natus libero obcaecati ratione quam
+                quae nam placeat odit aspernatur harum, repellendus impedit vel
+                ipsum optio assumenda culpa ipsam.
+              </Description>
+            </ChannelDetails>
+          </ChannelInfo>
           <Subscribe>SUBSCRIBE</Subscribe>
         </Channel>
       </Content>
