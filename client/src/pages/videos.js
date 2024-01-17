@@ -32,4 +32,9 @@ export const ButtonsWrapper = styled.div`
   gap: 20px;
   color: ${({ theme }) => theme.text};
 `;
-export const Button = styled.div``;
+export const Button = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+`;
