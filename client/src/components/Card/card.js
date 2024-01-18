@@ -1,22 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 360px;
-  margin-bottom: 45px;
+  width: ${(props) => props.type !== "sm" && "360px"};
+  margin-bottom: ${(props) => (props.type === "sm" ? "10px" : "35px")};
   cursor: pointer;
+  display: ${(props) => props.type === "sm" && "flex"};
+  gap: 10px;
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: 202px;
+  height: ${(props) => (props.type === "sm" ? "120px" : "202px")};
   background-color: #999;
   cursor: pointer;
+  flex: 1;
 `;
 
 export const Details = styled.div`
   display: flex;
-  margin-top: 16px;
+  margin-top: ${(props) => props.type !== "sm" && "16px"};
   gap: 12px;
+  flex: 1;
 `;
 
 export const ChannelImage = styled.img`
@@ -24,6 +28,7 @@ export const ChannelImage = styled.img`
   height: 36px;
   border-radius: 50%;
   background-color: #fff;
+  display: ${(props) => props.type === "sm" && "none"};
 `;
 export const Texts = styled.div``;
 export const Title = styled.h1`

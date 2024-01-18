@@ -11,13 +11,16 @@ import {
   Title,
 } from "./card";
 import { Link } from "react-router-dom";
-const Card = () => {
+const Card = ({ type }) => {
   return (
     <Link to="/video/test" style={{ textDecoration: "none" }}>
-      <Container>
-        <Image src={Thumbnail} />
-        <Details>
-          <ChannelImage src="https://i.pinimg.com/474x/a8/8a/49/a88a49dadce4b16fb109f3aea6ce446b.jpg" />
+      <Container type={type}>
+        <Image src={Thumbnail} type={type} />
+        <Details type={type}>
+          <ChannelImage
+            type={type}
+            src="https://i.pinimg.com/474x/a8/8a/49/a88a49dadce4b16fb109f3aea6ce446b.jpg"
+          />
           <Texts>
             <Title>Test Video</Title>
             <ChannelName>Constructorlib</ChannelName>
