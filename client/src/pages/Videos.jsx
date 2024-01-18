@@ -24,6 +24,7 @@ import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownOffAltOutl
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
 import Comments from "../components/Comments/Comments";
+import Card from "../components/Card/Card";
 const Videos = () => {
   return (
     <Container>
@@ -80,7 +81,17 @@ const Videos = () => {
         <Hr />
         <Comments />
       </Content>
-      <Recommendations>Recommendations</Recommendations>
+      <Recommendations>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Recommendations>
     </Container>
   );
 };
