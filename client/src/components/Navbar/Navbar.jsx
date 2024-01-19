@@ -13,7 +13,7 @@ const Navbar = () => {
           <Input placeholder="Search" />
           <SearchOutlinedIcon />
         </Search>
-        <Link to="/signin">
+        <Link to="/signin" style={{ textDecoration: "none", color: "inherit" }}>
           <Button>
             <AccountCircleOutlinedIcon />
             SIGN IN
