@@ -7,6 +7,7 @@ import { darkTheme, lightTheme } from "./utils/Theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Videos from "./pages/Videos";
+import SignIn from "./pages/SignIn";
 const Container = styled.div`
   display: flex;
 `;
@@ -30,6 +31,7 @@ export default function App() {
               <Routes>
                 <Route path="/">
                   <Route index element={<Home />} />
+                  <Route path="signin" element={<SignIn />} />
                   <Route path="video">
                     <Route path=":id" element={<Videos />} />
                   </Route>
