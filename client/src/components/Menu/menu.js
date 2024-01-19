@@ -25,6 +25,9 @@ export const Item = styled.div`
   align-items: center;
   gap: 20px;
   cursor: pointer;
+  &:hover {
+    background-color: ${({ theme }) => theme.soft};
+  }
 `;
 export const Img = styled.img`
   height: 25px;
