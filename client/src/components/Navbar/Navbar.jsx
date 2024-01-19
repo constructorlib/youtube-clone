@@ -4,6 +4,7 @@ import {
   AccountCircleOutlinedIcon,
   SearchOutlinedIcon,
 } from "../../utils/muiIcons";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Container>
@@ -12,10 +13,12 @@ const Navbar = () => {
           <Input placeholder="Search" />
           <SearchOutlinedIcon />
         </Search>
-        <Button>
-          <AccountCircleOutlinedIcon />
-          SIGN IN
-        </Button>
+        <Link to="/signin">
+          <Button>
+            <AccountCircleOutlinedIcon />
+            SIGN IN
+          </Button>
+        </Link>
       </Wrapper>
     </Container>
   );
