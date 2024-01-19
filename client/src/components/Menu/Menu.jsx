@@ -34,10 +34,12 @@ const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
       <Wrapper>
-        <Logo>
-          <Img src={LamaTube} />
-          LamaTube
-        </Logo>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Logo>
+            <Img src={LamaTube} />
+            LamaTube
+          </Logo>
+        </Link>
         <Item>
           <HomeIcon />
           Home

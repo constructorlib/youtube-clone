@@ -22,11 +22,11 @@ export default function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Container>
-        <Menu darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Main>
-          <Navbar />
-          <Wrapper>
-            <Router>
+        <Router>
+          <Menu darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Main>
+            <Navbar />
+            <Wrapper>
               <Routes>
                 <Route path="/">
                   <Route index element={<Home />} />
@@ -35,9 +35,9 @@ export default function App() {
                   </Route>
                 </Route>
               </Routes>
-            </Router>
-          </Wrapper>
-        </Main>
+            </Wrapper>
+          </Main>
+        </Router>
       </Container>
     </ThemeProvider>
   );
