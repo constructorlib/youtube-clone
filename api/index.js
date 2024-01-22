@@ -14,5 +14,6 @@ const connect = () => {
     });
 };
 app.listen(8888, () => {
-  console.log("connection secured");
+  connect();
+  console.log("server connected");
 });
