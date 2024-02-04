@@ -5,7 +5,6 @@ import userRoutes from "./routes/users.js";
 
 const app = express();
 dotenv.config();
-app.use("/api/users", userRoutes);
 
 const connect = () => {
   mongoose
@@ -17,6 +16,8 @@ const connect = () => {
       throw err;
     });
 };
+app.use("/api/users", userRoutes);
+
 app.listen(8888, () => {
   connect();
   console.log("server connected");
